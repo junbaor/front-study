@@ -7,12 +7,14 @@ specifiers:
   typescript: ^4.5.4
   vite: ^2.8.0
   vue: ^3.2.25
+  vue-router: '4'
   vue-tsc: ^0.29.8
 
 dependencies:
   '@element-plus/icons-vue': registry.npmmirror.com/@element-plus/icons-vue/1.1.1_vue@3.2.31
   element-plus: registry.npmmirror.com/element-plus/2.0.5_vue@3.2.31
   vue: registry.npmmirror.com/vue/3.2.31
+  vue-router: registry.npmmirror.com/vue-router/4.0.13_vue@3.2.31
 
 devDependencies:
   '@vitejs/plugin-vue': registry.npmmirror.com/@vitejs/plugin-vue/2.2.4_vite@2.8.6+vue@3.2.31
@@ -222,6 +224,12 @@ packages:
     dependencies:
       '@vue/compiler-dom': registry.npmmirror.com/@vue/compiler-dom/3.2.31
       '@vue/shared': registry.npmmirror.com/@vue/shared/3.2.31
+    dev: false
+
+  registry.npmmirror.com/@vue/devtools-api/6.0.13:
+    resolution: {integrity: sha512-T34EjcArVqzANedEZe2kXQ+AZsld2z1ptJlkOGm87+blk+s6udnP4ze/NYqV8lz1o9AIivimN0xxteLlWiWQdg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/devtools-api/-/devtools-api-6.0.13.tgz}
+    name: '@vue/devtools-api'
+    version: 6.0.13
     dev: false
 
   registry.npmmirror.com/@vue/reactivity-transform/3.2.31:
@@ -1352,6 +1360,18 @@ packages:
       '@vue/composition-api':
         optional: true
     dependencies:
+      vue: registry.npmmirror.com/vue/3.2.31
+    dev: false
+
+  registry.npmmirror.com/vue-router/4.0.13_vue@3.2.31:
+    resolution: {integrity: sha512-LmXrC+BkDRLak+d5xTMgUYraT3Nj0H/vCbP+7usGvIl9Viqd1UP6AsP0i69pSbn9O0dXK/xCdp4yPw21HqV9Jw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-router/-/vue-router-4.0.13.tgz}
+    id: registry.npmmirror.com/vue-router/4.0.13
+    name: vue-router
+    version: 4.0.13
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@vue/devtools-api': registry.npmmirror.com/@vue/devtools-api/6.0.13
       vue: registry.npmmirror.com/vue/3.2.31
     dev: false
 

@@ -6,6 +6,7 @@
     <div class="creator">
       by <a href="https://m.okjike.com/users/11CD03AE-1A7E-4925-AB9E-E6A61F70CAE3" target="_blank">@三丰</a>
     </div>
+    <el-empty v-if="feedList.length===0" description="无数据"></el-empty>
     <el-card v-for="feed in feedList" class="box-card" shadow="hover">
       <template #header>
         <div class="card-header">
